@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" href="https://yu.ctu.edu.vn/images/upload/article/2020/03/0305-logo-ctu.png">
+  <title>Giới thiệu</title>
+  <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+    integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+</head>
+<style>
+  * {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+  }
+
+  body {
+    font-family: "Open Sans", sans-serif;
+  }
+
+  :root {
+    --white: #fff;
+    --black: #000;
+    --primary: rgb(12, 247, 247);
+  }
+
+  .wide {
+    max-width: 1000px;
+    margin: 0 auto;
+  }
+
+  .background {
+    background: 
+        url("https://3.bp.blogspot.com/-jeCqyTH3jXI/UnoprkeQB6I/AAAAAAAAFPA/X9V6XjlES_Y/s1600/707657b39hsqemsd.gif"),
+        url("https://hoangkimngoc2001.github.io/hi/nen.png");
+
+    background-size: cover;
+    background-position: center center;
+   
+  }
+
+  .img img {
+    border-radius: 50px;
+  }
+
+  header {
+    border-bottom: 1px solid #ccc;
+  }
+
+  .header_container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .header_container img {
+    max-width: 80px;
+    box-shadow: var(--white) 0px 0px 10px 5px;
+    margin-top: 5px;
+    border-radius: 10px;
+  }
+
+  .header_nav {
+    line-height: 50px;
+  }
+
+  .header_nav ul li {
+    display: inline-block;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: all .3s ease;
+    font-size: 15px;
+    position: relative;
+    border-radius: 5px;
+  }
+
+  .header_nav li:hover {
+    background-color: var(--primary)
+  }
+
+  .header_nav li:hover a {
+    color: var(--black)
+  }
+
+  .header_nav li .sub {
+    position: absolute;
+    background-color: var(--white);
+    width: 100%;
+    border-radius: 5px;
+    margin-top: 5px;
+    display: none;
+    animation: identifier .7s ease;
+    transform-origin: top center;
+  }
+  .header_nav li .sub:after {
+    content: '';
+    width: 100px;
+    height: 20px;
+    position: absolute;
+    top: -10px;
+  }
+
+
+  @keyframes identifier {
+    from {
+      opacity: 0;
+      transform: rotateX(90deg);
+    }
+
+    to {
+      opacity: 1;
+      transform: rotateX(0);
+    }
+  }
+  .header_nav .sub li {
+    display: block;
+    padding: 0 15px;
+  }
+  .header_nav ul li:hover .sub {
+    display: block;
+  }
+  .header_nav li a {
+    color: var(--white);
+    text-decoration: none;
+    transition: all 0.5s ease-in-out;
+    padding: 15px 10px;
+  }
+
+  .header_nav li i {
+    padding-right: 5px;
+  }
+
+  .slider {
+    height: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .slider_container {
+    text-align: center;
+  }
+
+  .slider_container h1,
+  .slider_container h2 {
+    padding: 10px 0;
+    color: var(--white);
+  }
+
+  .slider_container h1 {
+    text-transform: uppercase;
+    font-size: 50px;
+  }
+
+  .slider_container h2 {
+    font-size: 40px;
+    text-transform: capitalize;
+  }
+
+  .top_title {
+    text-align: center;
+    margin: 10px 0 25px 0;
+    text-transform: uppercase;
+    font-size: 35px;
+    text-shadow: rgb(255, 0, 76) 0px 5px 15px;
+    color: rgb(252, 255, 104);
+    
+  }
+
+  .content {
+    margin-left: 25px;
+    text-align: left;
+    font-size: 16px;
+  }
+
+  .container {
+    color: var(--white);
+  }
+
+  .container .about {
+    max-width: 600px;
+    display: flex;
+    line-height: 1.5;
+    padding: 0 5px;
+    border: 2px solid var(--white);
+    padding: 15px;
+    box-shadow: #fff 0px 0px 20px 5px;
+    border-radius: 15px;
+    text-align: center;
+    margin: 0 auto;
+  }
+  .icon img {
+    width: 40px;
+    height: 40px;
+   
+  }
+  .icon {
+    display: flex;
+    justify-content: space-between;
+  }
+
+</style>
+
+<body>
+  <div class="background">
+    <div class="wide">
+      <header>
+        <div class="header_container">
+          <div class="header_logo">
+            <a href="https://www.ctu.edu.vn/"><img src="https://yu.ctu.edu.vn/images/upload/article/2020/03/0305-logo-ctu.png" alt="Logo Đại học Cần Thơ"></a>
+          </div>
+          <nav class="header_nav">
+            <ul>
+              <li><a href="index.html"><i class="fas fa-home"></i>Thông tin sinh viên</a></li>
+              <li><a href="Bac2.html"><i class="fas fa-calculator-alt"></i></i></i>Giải phương trình BẬC hai</a></li>
+              <li><a href="Dothi.html"><i class="fas fa-chart-line"></i></i>Vẽ đồ thị</a></li>
+              <li>
+                <a href="https://hoangkimngoc2001.github.io/KC326/Trangchu.html"><i class="far fa-book-open"></i>
+                  Bài tập
+              </a>
+          </li>
+          <li>
+              <a href=""><i class="far fa-info-circle"></i>
+                  Thông tin thêm
+              </a>
+              <ul class="sub">
+                  <li><a href="https://www.ctu.edu.vn/">CTU</a></li>
+                  <li><a href="https://elearning.ctu.edu.vn/">Elearning</a></li>
+                  <li><a href="https://htql.ctu.edu.vn/">HTQL</a></li>
+                </ul>
+              </li>
+            </ul>
+          </nav>
+        </div>
+      </header>
+      <div class="slider">
+        <div class="slider_container">
+          <h1>Đại học Cần Thơ</h1>
+          <h2>Học phần KC326</h2>
+        </div>
+      </div>
+      <div>
+      <h3 class="top_title">Thông tin sinh viên</h3>
+    </div>
+    <section class="wide container">
+      <div class="about">
+          <div class="img">
+            <img src="https://hoangkimngoc2001.github.io/hi/Anh.jpg" alt="Socute" width="225px", 
+            height="325px";>
+          </div>
+          <div class="content">
+            <p><b><u>Họ và tên:</u></b> <i>Hoàng Kim Ngọc</i> </p>
+            <p><b><u>Mã số sinh viên:</u></b> <i>B1905949</i> </p>
+            <p><b><u>Khoa:</u></b> <i>Công Nghệ</i> </p>
+            <p><b><u>Ngành:</u></b> <i>Quản lý công nghiệp</i> </p>
+            <p><b><u>Khóa:</u></b> <i>45</i> </p>
+            <p><b><u>Mã số sinh viên:</u></b> <i>B1905949</i> </p>
+            <p><b><u>Quê quán:</u></b> <i>Cà Mau</i> </p> 
+            <br>
+          
+            <div class="icon">
+              <a href="https://www.facebook.com/babysocu"><img src="https://www.vectorico.com/download/social_media/Facebook-Icon.png" alt="fb"></a>
+              <a href="mailto:ngocb1905949@student.ctu.edu.vn"><img src="https://www.hostedincanada.com/wp-content/uploads/2019/04/143-1433268_gmail-icon-gmail-icon-png.png" alt="mail"></a>
+              <a href="https://github.com/HoangKimNgoc2001"><img src="https://pluspng.com/img-png/github-octocat-logo-vector-png-png-ico-icns-svg-more-512.png" alt="github"></a>
+            </div>
+            </div>
+      </div>
+    </section>
+<br>
+<br>
+</body>
+
+</html>
